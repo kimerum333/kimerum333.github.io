@@ -58,10 +58,9 @@ uv run ruff format .     # 코드 예쁘게 정렬하기
 
 # 둘을 전부 적용한 VsCode 설정
 ## VS Code 설정도 바꾸자.
-```
 Ctrl + Shift + P
 -> user settings json 검색
-```
+
 ```JSON
 //하단에 추가
 {
