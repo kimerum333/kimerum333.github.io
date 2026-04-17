@@ -2,7 +2,7 @@
 title: "Python 개발환경 처음부터 세팅하기"
 date: 2026-04-16 12:00:00 +0900
 categories: [Python, Environment]
-tags: [Pylance, Ruff]
+tags: [vscode, python-setup, formatter, linter, Pylance, Ruff]
 ---
 
 인간은 숨쉬는 법은 너무 당연해서 굳이 기억하지 않는다.<br>
