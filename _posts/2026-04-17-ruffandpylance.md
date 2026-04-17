@@ -32,7 +32,10 @@ VS코드의 확장 프로그램, Pylance 가 이 일을 맡아준다.<br>
 파이랜스가 없으면 VS코드는 자동완성 기능을 제공할 수 없다.<br>
 고로, 쾌적한 파이썬 개발환경을 만들기 위해선 우선 Pylance 부터 설치하자.
 
-
+## 설치법
+위에서도 말했다시피, VS코드 확장 프로그램이다.<br>
+extension 가서 설치하면 되고, 우하단에 새로 생긴 버튼을 클릭하여,<br>
+자신의 venv환경에 맞게 체크해주면 인텔리센스가 작동할 것이다.
 
 # Ruff
 ## 포매터Formatter 와 린터Linter 는 무엇인가?
@@ -45,9 +48,18 @@ VS코드의 확장 프로그램, Pylance 가 이 일을 맡아준다.<br>
 하지만, 지금은 Ruff가 전부 통합해서 해준다.<br>
 거기에, Rust기반이라 소스 읽고 교정해주는 속도가 정말 빠르다.
 
+
+## 설치 및 사용법
+ruff는 파이썬 패키지이므로, pip나 uv등을 이용해 설치하면 된다.<br>
+단, 설치하는 것 만으로는 어떤 일도 일어나지 않는다.<br>
+
+VS코드의 ruff 확장 프로그램을 설치하면,<br>
+코딩 중에 ruff의 도움을 계속 받을 수 있다.<br>
+후술할 Vs Code 설정을 적용하면 좋다.<br>
+
 ```sh
 uv add --dev ruff
-
+#물론 코딩중에 방해받는게 싫으면, 이렇게 따로 실행하는 방법도 있다.
 uv run ruff check .      # 전체 검사
 uv run ruff check --fix  # 자동으로 고칠 수 있는 건 다 고치기
 uv run ruff format .     # 코드 예쁘게 정렬하기
@@ -61,7 +73,7 @@ uv run ruff format .     # 코드 예쁘게 정렬하기
 Ctrl + Shift + P
 -> user settings json 검색
 
-```JSON
+```json
 //하단에 추가
 {
   // 기본 포맷터를 Ruff로 설정
